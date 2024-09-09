@@ -1,2 +1,2 @@
-# personal-website
-This is a little bit more about me
+# Personal Website
+Get a better glimpse about me and my work
