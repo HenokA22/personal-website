@@ -46,7 +46,7 @@ body {
   border-radius: 7px;
   border: none;
   transition: margin-left 0.3s ease; /* Smooth transition for margin changes */
-  background-color: rgb(239, 238, 238);
+  background-color: rgb(246, 244, 244);
 }
 
 .flex-column:hover {
