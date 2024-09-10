@@ -1,0 +1,143 @@
+* {
+    font-family: 'Courier New', monospace;
+}
+
+body {
+  background-color: #87CEEB; /* Sky Blue */
+}
+
+.prof-card {
+    position: fixed;
+    top: 25%;
+    right: 5px; /* Changed from left to right */
+    width: 30%;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.content-container {
+    position: fixed;
+    left: 5px; /* Changed from right to left */
+    top: 0; /* Align with the top */
+    width: 65%; /* Adjusted width */
+    height: 100%;
+    overflow-y: scroll;
+    z-index: 1; /* Ensure it appears below the prof-card */
+}
+
+.rounded-circle {
+    max-width: 300px;
+    margin-bottom: 50px;
+}
+
+.social-icon {
+    margin-top: 10px;
+    margin-right: 2.5px;
+    margin-left: 2.5px;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+.flex-column {
+  margin-left: 8%; /* Starting margin */
+  margin-right: 8%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 84%;
+  border-radius: 7px;
+  border: none;
+  transition: margin-left 0.3s ease; /* Smooth transition for margin changes */
+  background-color: rgb(239, 238, 238);
+}
+
+.flex-column:hover {
+  margin-left: 10%; /* Increase margin to shift right on hover */
+}
+
+
+.content-header{
+    margin-top: 30px;
+    margin-left: calc(8% + 20px);
+}
+
+#input {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 3%;
+}
+
+.outer-bar {
+    border: 2px solid #7947dd;
+    width: 60%;
+    height: 30px;
+
+}
+
+.inner-bar{
+    background-color: #7947dd;
+    width:50%;
+    height: 26px;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    color: black;
+}
+
+.fa-linkedin {
+  color: #0077B5; /* LinkedIn blue color */
+  font-size: 24px; /* Adjust size as needed */
+  margin: 10px; /* Space around the icon */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Hover effect */
+.fa-linkedin:hover {
+  color: #005582; /* Darker shade for hover effect */
+}
+
+
+
+/* Basic styling for Instagram icon */
+.fa-instagram {
+  color: #C13584; /* Instagram's brand color */
+  font-size: 24px; /* Adjust size as needed */
+  margin: 10px; /* Space around the icon */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Hover effect */
+.fa-instagram:hover {
+  color: #E1306C; /* Slightly different shade for hover effect */
+}
+
+/* Hover effect */
+.fa-github:hover {
+  color: #000000; /* Change to a different color or use a shade */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+@media only screen and (max-width: 700px) {
+    .prof-card {
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+    }
+
+    .content-container {
+        position: static;
+        right: auto;
+        width: auto;
+    }
+
+    .rounded-circle {
+        margin-top: 20%;
+        max-width: 275px;
+    }
+
+    .flex-column {
+        margin-top: 4%;
+    }
+}
