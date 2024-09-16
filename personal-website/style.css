@@ -14,6 +14,22 @@ body {
     z-index: 10; /* Ensure it appears above other elements */
 }
 
+.site-footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
 .content-container {
     position: fixed;
     left: 5px; /* Changed from right to left */
@@ -22,6 +38,7 @@ body {
     height: 100%;
     overflow-y: scroll;
     z-index: 1; /* Ensure it appears below the prof-card */
+    padding-bottom: 50px;
 }
 
 .rounded-circle {
@@ -83,6 +100,11 @@ a {
     text-decoration: underline;
     text-decoration-style: dashed;
     color: black;
+}
+
+.site-footer {
+  color: #fff;
+  background: rgb(17, 16, 16);
 }
 
 .fa-linkedin {
