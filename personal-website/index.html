@@ -12,6 +12,30 @@
     </head>
 
     <body>
+      <header>
+        <div class="logo"> Henok © </div>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="" class="active">Home</a>
+            </li>
+            <li>
+              <a href="" class="">About Me</a>
+            </li>
+            <li>
+              <a href="" class="">Work History</a>
+            </li>
+            <li>
+              <a href="" class="">Personal Projects</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <div class="prof-card">
         <div class="text-center">
             <img src="BadgePhoto.jpg" class="rounded-circle" id="profpic">
@@ -33,7 +57,7 @@
           <h2 class="content-header" style="margin-top: 100px;">About Me</h2>
           <div  href="#" class="list-group-item list-group-item-action flex-column">
             <p class="card-text">
-              Hello, I'm a student at the <p href="https://www.uw.edu/">University of Washington</p>a> majoring in Computer Engineering and minoring in Applied Mathamatics. I have a strong interest in system software development, web applications, and generally anything to do with computing.
+              Hello, I'm a rising junior at the <a href="https://www.uw.edu/">University of Washington</a> majoring in Computer Engineering and minoring in Applied Mathamatics. I have a strong interest in system software development, web applications, and generally anything to do with computing. In my free time I love to watch anime, go on runs, and trying out new resturants in the greater Seattle area.
             </p>
           </div>
           <h2 class="content-header">Work History</h2>
@@ -125,13 +149,12 @@
           </div>
         <div>
       </div>
-
       <footer class="site-footer">
         <div class="container">
           <p>&copy; 2024 Henok Assalif</p>
         </div>
       </footer>
-
+      <script src="script.js"></script> <!-- Link to your JavaScript file -->
       <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
@@ -164,10 +187,10 @@
   1.) Add Mini logos for all the Companies that I am apart of (DONE)
 
   2.) Add a footer with my name and email and phone number (DONE)
-    Strech Goal: Make the footer only appear if the scroll is at the bottom of the page (TODO)
+    Strech Goal: Make the footer only appear if the scroll is at the bottom of the page (DONE)
     Having issues with using a script tag, Note for later is to use console.log to debug, to see
     if the scroll event is firing.
 
-  3.) Add a Navbar with links to the different sections of the page (TODO)
+  3.) Add a Navbar with links to the different sections of the page (IN-Progress still need to add event listeners to the links in the navbar to navgiate to section start)
 
 -->
