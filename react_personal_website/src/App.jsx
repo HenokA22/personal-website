@@ -1,5 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
+
+// Importing styles
 import './App.css'
+
+// Importing components
 import Header from './components/header'
 import ProfileCard from './components/profileCard'
 import ContentContainer from './components/contentContainer'
@@ -10,6 +14,18 @@ import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollToPlugin)
 
+/**
+ * TODO: Consider how to make navbar work for the hamburger menu (aka mobile
+ * screen size). Consider usages of media queries and callback functions. The
+ * navOpen state will be key to use here too
+ */
+
+// TODO: Address todos from other nested components
+
+/**
+ * App: Main application component.
+ * @returns {JSX.Element}
+ */
 function App() {
   const contentRef = useRef(null)
   const [navOpen, setNavOpen] = useState(false)
@@ -89,8 +105,6 @@ function App() {
     setNavOpen(false);
   }
 
-  // TODO: Change this migration HTML into components for better readability
-  // TODO: Adjust the company icon paths and image spacing
   // TODO: Update the website text
   return (
     <div>
