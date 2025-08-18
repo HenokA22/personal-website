@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 
+// GSAP for advanced scrolling control
+import { gsap } from 'gsap'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
+gsap.registerPlugin(ScrollToPlugin)
+
 function App() {
   const contentRef = useRef(null)
   const [navOpen, setNavOpen] = useState(false)
@@ -26,30 +31,57 @@ function App() {
     }
 
     // Attach the scroll event listener
-    scrollContainer.addEventListener('scroll', onScroll);
+    scrollContainer.addEventListener("scroll", onScroll);
 
     // Remove event listener on cleanup of this component
     return (() => {
-      scrollContainer.removeEventListener('scroll', onScroll);
+      scrollContainer.removeEventListener("scroll", onScroll);
     });
   }, [])
 
-  /** TODO: Tinker with the speed of the scroll */
-  const smoothScroll = (targetId) => {
+  // targetId is the name of the id that corresponds to the section to scroll to
+  // based from a specific <a> tag in the navbar. Each <a> tag has a specfic
+  // callback to this function that populates its parameters with the correct
+  // values in the html.
+  const smoothScroll = (targetId, durationSeconds = 1.5) => {
     const scrollContainer = contentRef.current;
+    // Something went wrong check
     if (!scrollContainer) {
       return;
     }
-    let targetElement;
-    if (targetId === 'home') {
-      scrollContainer.scrollTo({ top: 0, behavior: 'smooth' });
+
+    // Scroll the scroll bar according to which a tag from the navbar is clicked
+    if (targetId === "home") {
+      gsap.to(scrollContainer, {
+        duration: durationSeconds,
+        ease: "power1.inOut",
+        scrollTo: { y: 0, autoKill: true }
+      })
+      setNavOpen(false)
       return;
-    } else {
-      targetElement = scrollContainer.querySelector(`#${targetId}`);
     }
-    if (!targetElement) return;
-    const targetTop = targetElement.offsetTop - scrollContainer.offsetTop + 70;
-    scrollContainer.scrollTo({ top: targetTop, behavior: 'smooth' });
+
+    let targetElement = scrollContainer.querySelector(`#${targetId}`);
+
+    // Something went wrong check
+    if (!targetElement) {
+      return;
+    }
+
+    // The +70 is to avoid the navbar getting in the way to the selected section
+    // moving up the scroll box
+    const headerOffset = 70
+    const targetTop = targetElement.offsetTop - scrollContainer.offsetTop + headerOffset
+
+    // Scroll to the desired offset
+    gsap.to(scrollContainer, {
+      duration: durationSeconds,
+      ease: "power1.inOut",
+      scrollTo: { y: targetTop, autoKill: true }
+    })
+
+    // Logic for making sure the navbar for the smaller screens closes after a
+    // link is clicked
     setNavOpen(false);
   }
 
