@@ -1,6 +1,6 @@
 
 // TODO Get the mail button to open a mail popup and allow the user to send an
-// email. This probably going to require an externallibrary.
+// email. This probably going to require an external library.
 function ProfileCard() {
   return (
     <div className="prof-card">

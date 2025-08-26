@@ -127,6 +127,18 @@ header {
   margin-left: calc(8% + 20px);
 }
 
+.content-sections {
+  display: flex;
+  justify-content: flex-start; /* was center */
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.content-sections > * {
+  text-align: left;
+}
+
 #input {
   width: 88%;
   margin-left: 6%;
