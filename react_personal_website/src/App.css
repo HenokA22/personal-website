@@ -52,11 +52,6 @@ header {
   background: #fefefe;
 }
 
-.nav-bar ul li a.active {
-  color: #11101b;
-  background: #fefefe;
-}
-
 .prof-card {
   position: fixed;
   top: 25%;
@@ -237,14 +232,14 @@ a {
   margin-left: 5px;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 990px) {
   .content-container {
     top: 80px;
     height: calc(100% - 80px);
   }
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 990px) {
   .prof-card {
     position: static;
     top: auto;
@@ -291,6 +286,7 @@ a {
     overflow: hidden;
   }
 
+  /* Chained selectors mean that any dom element must have all chained selectors as classes*/
   .nav-bar.active {
     height: 450px;
   }

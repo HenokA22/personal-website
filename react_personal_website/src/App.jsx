@@ -14,12 +14,6 @@ import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollToPlugin)
 
-/**
- * TODO: Consider how to make navbar work for the hamburger menu (aka mobile
- * screen size). Consider usages of media queries and callback functions. The
- * navOpen state will be key to use here too
- */
-
 // TODO: Address todos from other nested components
 
 /**
@@ -59,49 +53,75 @@ function App() {
     });
   }, [])
 
-  // targetId is the name of the id that corresponds to the section to scroll to
-  // based from a specific <a> tag in the navbar. Each <a> tag has a specfic
-  // callback to this function that populates its parameters with the correct
-  // values in the html.
+
+  /**
+   * Each <a> tag in the navbar has a specific callback to this function that
+   * populates its parameters with the correct values in the html. The y
+   * coordinate calculation to where to scroll to depends on the window width
+   * which is handled accordingly in this implementation.
+   *
+   * @param {string} targetId - is the name of the id that corresponds to the
+   * section to scroll to based from a specific <a> tag in the navbar.
+   *
+   * @param {number} durationSeconds - The duration of the scroll animation in
+   * seconds.
+   */
   const smoothScroll = (targetId, durationSeconds = 1.5) => {
-    const scrollContainer = contentRef.current;
+    const headerOffset = 70
+    const isMobile = window.matchMedia('(max-width: 990px)').matches
+
+    // Determine the which scroll container to select depending on window width
+    const scrollerType = isMobile ? window : contentRef.current
+
     // Something went wrong check
-    if (!scrollContainer) {
+    if (!scrollerType) {
       return;
     }
 
-    // Scroll the scroll bar according to which a tag from the navbar is clicked
+    // Home section scroll
     if (targetId === "home") {
-      gsap.to(scrollContainer, {
+      gsap.to(scrollerType, {
         duration: durationSeconds,
         ease: "power1.inOut",
         scrollTo: { y: 0, autoKill: true }
       })
+
+      // Ensure on smaller screens that the navbar is closed when clicked
       setNavOpen(false)
       return;
     }
 
-    let targetElement = scrollContainer.querySelector(`#${targetId}`);
-
+    let targetElement = document.getElementById(targetId);
     // Something went wrong check
     if (!targetElement) {
       return;
     }
 
-    // The +70 is to avoid the navbar getting in the way to the selected section
-    // moving up the scroll box
-    const headerOffset = 70
-    const targetTop = targetElement.offsetTop - scrollContainer.offsetTop + headerOffset
+    // Scrolling methods depend on the type of scroller
+    let scrollToSettings;
 
-    // Scroll to the desired offset
-    gsap.to(scrollContainer, {
+    // Initialize the scroll settings
+    if (isMobile) {
+      // Window: can pass element + offsetY
+      scrollToSettings = {
+        y: targetElement, offsetY: headerOffset, autoKill: true
+      };
+    } else {
+      // Custom container: computing numeric y is needed
+      const targetTop = targetElement.offsetTop - scrollerType.offsetTop + headerOffset;
+      scrollToSettings = {
+        y: targetTop, autoKill: true
+      };
+    }
+
+    // Apply smooth scroll animation
+    gsap.to(scrollerType, {
       duration: durationSeconds,
       ease: "power1.inOut",
-      scrollTo: { y: targetTop, autoKill: true }
-    })
+      scrollTo: scrollToSettings
+    });
 
-    // Logic for making sure the navbar for the smaller screens closes after a
-    // link is clicked
+    // Ensure on smaller screens that the navbar is closed when clicked
     setNavOpen(false);
   }
 
