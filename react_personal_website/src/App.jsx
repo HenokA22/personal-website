@@ -14,7 +14,7 @@ import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollToPlugin)
 
-// TODO: Address todos from other nested components
+// TODO: Work on mail pop up feature in the profile card
 
 /**
  * App: Main application component.
@@ -125,7 +125,6 @@ function App() {
     setNavOpen(false);
   }
 
-  // TODO: Update the website text
   return (
     <div>
   <Header navOpen={navOpen} setNavOpen={setNavOpen} smoothScroll={smoothScroll} />

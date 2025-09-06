@@ -1,6 +1,3 @@
-// TODO: Update the website text
-// TODO: Consider making work history and personal project sections use a map.
-
 /**
  * PersonalProjectsSection: Renders the Personal Projects content block.
  * @returns {JSX.Element}
@@ -9,16 +6,6 @@ function PersonalProjectsSection() {
   return (
     <>
       <h2 id="projects-section" className="content-header">Personal Projects</h2>
-      <div className="list-group-item list-group-item-action flex-column">
-        <h5 className="card-title">
-          Friend-ly Project Manager & Backend Developer
-        </h5>
-        <h6 className="card-subtitle mb-2 text-muted">Currently creating!</h6>
-        <p className="card-text">
-          Developing a student-centered social media app aimed at helping commuters and first-year students at the University of Washington form meaningful and lasting friendships based on shared interests. Led discussions during the ideation process, contributing to design documentation that outlined MVP features, user stories, system architecture, API specifications, tech stack selection, and data schema.
-        </p>
-        <a href="https://github.com/SlysDev/friend-ly">GitHub Link</a>
-      </div>
       <div className="list-group-item list-group-item-action flex-column">
         <h5 className="card-title">Course Website</h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2024</h6>
