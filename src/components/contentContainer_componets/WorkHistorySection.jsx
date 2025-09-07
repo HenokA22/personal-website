@@ -8,7 +8,7 @@ function WorkHistorySection() {
       <h2 id="work-section" className="content-header">Work History</h2>
       <div className="list-group-item list-group-item-action flex-column">
         <h5 className="card-title">Software Engineer Intern @ Uber{'     '}
-          <img id="uber-logo" src="public/uber-icon.svg" alt="Uber Logo" />
+          <img id="uber-logo" src="/uber-icon.svg" alt="Uber Logo" />
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Fall 2025</h6>
         <p className="card-text">
