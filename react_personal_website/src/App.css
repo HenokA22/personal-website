@@ -73,6 +73,73 @@ header {
   z-index: 100;
 }
 
+/* Basic modal styles */
+.contact-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* Slightly darker greyed out screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.contact-modal {
+  background: #ffffff;
+  width: min(400px, 90%);
+  border-radius: 6px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+  overflow: hidden;
+  font-family: "Google Sans Regular", system-ui, sans-serif;
+}
+
+.contact-modal-header {
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0.9rem;
+}
+
+.contact-modal-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.contact-modal-close-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.contact-modal-close-btn:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.contact-modal-body {
+  padding: 1rem 1rem 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.contact-modal-body a {
+  color: #0073e6;
+  text-decoration: underline;
+}
+.contact-modal-body a:hover {
+  text-decoration: none;
+}
+
+/* Prevent body scroll when modal open */
+body.modal-open {
+  overflow: hidden;
+}
+
 .site-footer.show-footer {
   bottom: 0;
 }
