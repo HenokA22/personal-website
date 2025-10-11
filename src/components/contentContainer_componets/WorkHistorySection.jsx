@@ -55,7 +55,7 @@ function WorkHistorySection() {
         <p className="card-text">
           I collaborated with graduate student Chu Li to develop a geo-visualization question-and-answer application tailored for screen reader users. As part of this work, I designed and implemented a voice mode in React.js that integrated ChatGPT and the Web Speech API, enabling speech-to-text and microphone functionality while prioritizing accessibility.
         </p>
-        <a href="#">Link to paper coming soon</a>
+        <a href="https://makeabilitylab.cs.washington.edu/media/publications/Li_ADemoOfGeoqa3TowardsAnAccessibleAiBasedQuestionAnsweringSystemForGeoanalytics_ASSETS2025.pdf"> Demo Paper</a>
       </div>
 
       <div className="list-group-item list-group-item-action flex-column">
