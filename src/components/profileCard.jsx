@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react'
 import { createPortal } from 'react-dom'
 
+// TODO: Make an email pop up modal
+
 // Simple contact modal (internal) – keeps implementation local to the profile card.
 function ProfileCard() {
   const [showEmailModal, setShowEmailModal] = useState(false)
@@ -45,6 +47,7 @@ function ProfileCard() {
   return (
     <div className="prof-card">
       <div className="text-center">
+        {/** Be sure to swap this photo for a more recent headshot */}
         <img src="/BadgePhoto.jpg" className="rounded-circle" id="profpic" />
       </div>
       <h2 className="text-center">

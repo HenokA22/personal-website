@@ -14,8 +14,6 @@ import { gsap } from 'gsap'
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 gsap.registerPlugin(ScrollToPlugin)
 
-// TODO: Work on mail pop up feature in the profile card
-
 /**
  * App: Main application component.
  * @returns {JSX.Element}
@@ -127,10 +125,10 @@ function App() {
 
   return (
     <div>
-  <Header navOpen={navOpen} setNavOpen={setNavOpen} smoothScroll={smoothScroll} />
-  <ProfileCard />
-  <ContentContainer ref={contentRef} />
-  <SiteFooter show={showFooter} />
+      <Header navOpen={navOpen} setNavOpen={setNavOpen} smoothScroll={smoothScroll} />
+      <ProfileCard />
+      <ContentContainer ref={contentRef} />
+      <SiteFooter show={showFooter} />
     </div>
   )
 }
