@@ -8,15 +8,15 @@ function WorkHistorySection() {
       <h2 id="work-section" className="content-header">Work History</h2>
 
       <div className="list-group-item list-group-item-action flex-column">
-        <h5 className="card-title">Teaching Assistant @ Paul G Allen School of Computer Science & Engineering{'     '}
-          <img id="ta-logo" src="/TALogo.png" alt="Paul G Allen School Logo" />
+        <h5 className="card-title">Teaching Assistant @ Paul G. Allen School of Computer Science & Engineering{'     '}
+          <img id="ta-logo" src="/TALogo.png" alt="Paul G. Allen School Logo" />
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">September 2024 - Present</h6>
         <p className="card-text">
           During my time as a Hardware/Software Interface Teaching Assistant in the Paul G. Allen School, I worked closely with over <b>100</b> students across different formats of learning. Each week, I taught a recitation of lecture to <b>27+</b> students to reinforce core principles of <b>computer organization, C programming, and Assembly</b>.
         </p>
 
-        <p>As a Allen Scholars Teaching Assistant, I helped to facilitate group discussions of 25+ students on data structures and object-oriented programming. These sessions created space for collaboration and critical reflection, helping students connect theory to practice.</p>
+        <p className="card-text"> As an Allen Scholars Teaching Assistant, I helped to facilitate group discussions of 25+ students on data structures and object-oriented programming. These sessions created space for collaboration and critical reflection, helping students connect theory to practice.</p>
 
         <p className="card-text">
           Beyond the classroom, I held office hours where nearly 100 students sought support throughout the year. In one-on-one tutoring sessions, I guided students through the debugging process and resolved code issues in both C and Java—support that often translated into visible improvements in their confidence and performance. I also oversaw grading for students in my courses, providing detailed weekly feedback to ensure fairness and consistency. My collaboration with the professor and teaching staff streamlined communication and directly shaped course improvements, making the classroom a stronger learning environment.
@@ -30,7 +30,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2026</h6>
         <p className="card-text">
-          Throughout my internship, I was tasked migrating usages of <b>AsyncTask</b> (deprecated) code within the Google Drive Android codebase to <b>Kotlin Coroutines</b>. Doing so reduced the risk of memory leaks, app crashes, and application not responds from happening in an application serving <b>700M+ users.</b> Doing so improved the maintainability of the codebase as there was a reduction in the cognitive load of developers needing to manage multiple asynchronous programming frameworks, improve readability, and decrease the onboarding cost for new engineers.
+          Throughout my internship, I was tasked with migrating usages of <b>AsyncTask</b> (deprecated) code within the Google Drive Android codebase to <b>Kotlin Coroutines</b>. Doing so reduced the risk of memory leaks, app crashes, and Application Not Responding (ANRs) from happening in an application serving <b>700M+ users.</b> Doing so improved the maintainability of the codebase as there was a reduction in the cognitive load of developers needing to manage multiple asynchronous programming frameworks, improve readability, and decrease the onboarding cost for new engineers.
         </p>
 
         <p className="card-text">
@@ -38,11 +38,11 @@ function WorkHistorySection() {
         </p>
 
         <p className="card-text">
-          I wasn't able to clean up all instances. However, I provided a clear roadmap to do so. I did this by <b>authoring a migration playbook document</b> which outlines best practices when writing Kotlin Coroutines in the context of AsyncTask migrations, outline common pitfalls when doing so, testing strategies, have the necessary toolkit to be empowered to perform the remaining set of AsyncTask migrations.
+          I wasn't able to clean up all instances. However, I provided a clear roadmap to do so. I did this by <b>authoring a migration playbook document</b> that outlines best practices when writing Kotlin Coroutines in the context of AsyncTask migrations, details common pitfalls when doing so, testing strategies, and equips Drive Engineers with the necessary toolkit to be empowered to perform the remaining set of AsyncTask migrations.
         </p>
 
         <p className="card-text">
-          Google moves fast, and I was able to successful learn at least 10+ internal tools and improve my velocity in writing production quality code.
+          Google moves fast, and I was able to successfully learn at least 10+ internal tools and improve my velocity in writing production quality code.
         </p>
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7506888736157241345/">LinkedIn post</a>
       </div>
@@ -54,11 +54,11 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Fall 2025</h6>
         <p className="card-text">
-          Throughout my internship, I engineered 2 full stack automation features <b>(Java, React.js)</b> for non engineering team dashboard to <b>1.{')'}</b> quickly disable a team owned algorithm's parameters and
-          <b> 2.{')'}</b> accelerate the pace of launch the algorithm to new cities. This lead to reduce friction in communication between the Eats real time pricing team and a supporting non engineering team during oncall and shorten a manual oncall task from a <b>2-3 day</b> process to <b>3 mins</b>.
+          Throughout my internship, I engineered 2 full stack automation features <b>(Java, React.js)</b> for a non engineering team dashboard to <b>1.{')'}</b> quickly disable a team owned algorithm's parameters and
+          <b> 2.{')'}</b> accelerate the pace of launching the algorithm to new cities. This led to reduced friction in the communication between the Eats real time pricing team and a supporting non engineering team during oncall while also shortening a manual oncall task from a <b>2-3 day</b> process to <b>3 mins</b>.
         </p>
         <p className="card-text">
-          To do so, I built <b>3 gRPCs</b> to automate the update of <b>13+ dynamic configuration objects</b> involved in an algorithm usage and set up cron timer(s) to continuously trigger procedures related to the algorithm execution. I also defined new Protobuf messages in order to ensure my changes are backward compatible. Leveraged Java's CompletableFutures to achieve asynchronous data processing and provide robust error handling.
+          To do so, I built <b>3 gRPCs</b> to automate the update of <b>13+ dynamic configuration objects</b> involved in an algorithm usage and set up cron timer(s) to continuously trigger procedures related to the algorithm execution. I also defined new Protobuf messages in order to ensure my changes are backward compatible. I leveraged Java's CompletableFutures to achieve asynchronous data processing and provide robust error handling.
         </p>
 
         <p className="card-text">
@@ -85,8 +85,8 @@ function WorkHistorySection() {
       </div>
 
       <div className="list-group-item list-group-item-action flex-column">
-        <h5 className="card-title">Research Assistant @ Paul G Allen School of Computer Science & Engineering{'     '}
-          <img id="ta-logo" src="/TALogo.png" alt="Paul G Allen School Logo" />
+        <h5 className="card-title">Research Assistant @ Paul G. Allen School of Computer Science & Engineering{'     '}
+          <img id="ta-logo" src="/TALogo.png" alt="Paul G. Allen School Logo" />
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">January 2025 - June 2025</h6>
         <p className="card-text">

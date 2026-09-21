@@ -18,7 +18,7 @@ function PersonalProjectsSection() {
         <h5 className="card-title">Pong Game</h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2023</h6>
         <p className="card-text">
-          This project served as my introductory in web development. I chose something to build the was simple yet complex enough for me to learn from. <br /><br /> This project is a JavaScript-based Pong game with both single-player and two-player modes. Built using HTML, CSS, and JavaScript, it features smooth paddle controls, dynamic ball movement, and real-time gameplay updates. Players can choose between competing against an AI or another player, with collision detection and ball physics adding complexity. The game includes a start screen, pause, and reset functionality, providing an engaging and responsive experience.
+          This project served as my introduction to web development. I chose something to build that was simple yet complex enough for me to learn from. <br /><br /> This project is a JavaScript-based Pong game with both single-player and two-player modes. Built using HTML, CSS, and JavaScript, it features smooth paddle controls, dynamic ball movement, and real-time gameplay updates. Players can choose between competing against an AI or another player, with collision detection and ball physics adding complexity. The game includes a start screen, pause, and reset functionality, providing an engaging and responsive experience.
         </p>
         <a href="https://github.com/HenokA22/Pong-Game">GitHub Link</a>
       </div>
