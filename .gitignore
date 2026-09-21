@@ -74,3 +74,6 @@ dist/
 # Firebase Hosting files
 .firebaserc
 firebase.json
+
+# Ignore macOS finder changes created when using finder (Desktop Services Store)
+.DS_Store

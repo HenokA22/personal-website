@@ -29,17 +29,16 @@ function WorkHistorySection() {
           <img id="google-logo" src="/google-logo.png" alt="Google Logo" />
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2026</h6>
-        {/** TOOD: Bold certain areas of the text here. Consider doing so for other experiences as well! */}
         <p className="card-text">
-          Throughout my internship, I was tasked migrating usages of <b>AsyncTask</b> (depricated) code within the Google Drive Android codebase to <b>Kotlin Coroutines</b>. Doing so reduced the risk of memory leaks, app crashes, and application not responds from happening in an application serving <b>700M+ users.</b> Doing so improved the maintainability of the codebase as there was a reduction in the cognitive load of developers needing to manage multiple asynchronous programming frameworks, improve readability, and decrease the onboarding cost for new engineers.
+          Throughout my internship, I was tasked migrating usages of <b>AsyncTask</b> (deprecated) code within the Google Drive Android codebase to <b>Kotlin Coroutines</b>. Doing so reduced the risk of memory leaks, app crashes, and application not responds from happening in an application serving <b>700M+ users.</b> Doing so improved the maintainability of the codebase as there was a reduction in the cognitive load of developers needing to manage multiple asynchronous programming frameworks, improve readability, and decrease the onboarding cost for new engineers.
         </p>
 
         <p className="card-text">
-          To ensure safe migrations, I leveraged an experimental (A/B) flagging framework to execute controlled, staged rollouts of migrations, while using internal monitoring tools to manage crash clusters and performance metrics in order to ensure zero regressions before <b>100% </b> production release. I also wrote UI integration and unit tests to ensure all success and failure outcomes of UI flows async computations are properely tested. As AsyncTask was notoriously hard to test, I was able to increase the code coverage of async code to over <b>90%</b> and certain directories by up to <b>57%.</b>
+          To ensure safe migrations, I leveraged an experimental (A/B) flagging framework to execute controlled, staged rollouts of migrations, while using internal monitoring tools to manage crash clusters and performance metrics in order to ensure zero regressions before <b>100% </b> production release. I also wrote UI integration and unit tests to ensure all success and failure outcomes of UI flows async computations are properly tested. As AsyncTask was notoriously hard to test, I was able to increase the code coverage of async code to over <b>90%</b> and certain directories by up to <b>57%.</b>
         </p>
 
         <p className="card-text">
-          I wasn't able to clean up all instances. However, I provided a clear roadmap to do so. I did this by <b>authoring a migration playbook document</b> which outlines best practices when writing Kotlin Coroutines in the context of AsyncTask migrations, outline common pitfalls when doing so, testing stategies, have the necessary toolkit to be empowered to perform the remaining set of AsyncTask migrations.
+          I wasn't able to clean up all instances. However, I provided a clear roadmap to do so. I did this by <b>authoring a migration playbook document</b> which outlines best practices when writing Kotlin Coroutines in the context of AsyncTask migrations, outline common pitfalls when doing so, testing strategies, have the necessary toolkit to be empowered to perform the remaining set of AsyncTask migrations.
         </p>
 
         <p className="card-text">
@@ -59,7 +58,7 @@ function WorkHistorySection() {
           <b> 2.{')'}</b> accelerate the pace of launch the algorithm to new cities. This lead to reduce friction in communication between the Eats real time pricing team and a supporting non engineering team during oncall and shorten a manual oncall task from a <b>2-3 day</b> process to <b>3 mins</b>.
         </p>
         <p className="card-text">
-          To do so, I built <b>3 gRPCs</b> to automate the update of <b>13+ dynamic configuration objects</b> involved in an algorithm usage and set up cron timer(s) to continuously trigger procedures related to the algorithm execution. I also defined new Protobuf messages in order to ensure my changes are backward compatable. Leveraged Java's CompletableFutures to achieve asynchronous data processing and provide robust error handling.
+          To do so, I built <b>3 gRPCs</b> to automate the update of <b>13+ dynamic configuration objects</b> involved in an algorithm usage and set up cron timer(s) to continuously trigger procedures related to the algorithm execution. I also defined new Protobuf messages in order to ensure my changes are backward compatible. Leveraged Java's CompletableFutures to achieve asynchronous data processing and provide robust error handling.
         </p>
 
         <p className="card-text">
@@ -78,7 +77,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2025</h6>
         <p className="card-text">
-          During my internship, I built an AI agent to improve the triage capabilities of a Kubernetes-based incident management system and introduced a new data stream of images. To expand its reach, I wrote MCP servers that pulled from multiple sources such as a kusto database, vector database, and formatted log files. The impact of my work was evident in the agent's ability to handle a wider variety of incidents, leading to a <b>21% </b>increase in successful triages. There is also an anticipated reduction in manual triage workload for the team.
+          During my internship, I built an AI agent to improve the triage capabilities of a Kubernetes-based incident management system and introduced a new data stream of images. To expand its reach, I wrote MCP servers that pulled from multiple sources such as a Kusto database, vector database, and formatted log files. The impact of my work was evident in the agent's ability to handle a wider variety of incidents, leading to a <b>21% </b>increase in successful triages. There is also an anticipated reduction in manual triage workload for the team.
         </p>
         <p className="card-text">
           I also had a chance to learn mocking techniques that allowed me to write reliable, maintainable tests. Beyond implementation, I drove discussions around agentic technologies such as Semantic Kernel and Azure AI Foundry, comparing multi-agent and monolithic systems by creating a tradeoff document and presenting it in a teamwide meeting to educate the team on ideal applications and guide future adoption.

@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
-import AboutSection from './contentContainer_componets/AboutSection.jsx'
-import WorkHistorySection from './contentContainer_componets/WorkHistorySection.jsx'
-import PersonalProjectsSection from './contentContainer_componets/PersonalProjectsSection.jsx'
+import AboutSection from './contentContainer_components/AboutSection.jsx'
+import WorkHistorySection from './contentContainer_components/WorkHistorySection.jsx'
+import PersonalProjectsSection from './contentContainer_components/PersonalProjectsSection.jsx'
 
 /**
  * This component encapsulates all scrollable content sections. Props are not used in this component.
