@@ -114,7 +114,7 @@ function ProfileCard() {
   return (
     <div className="prof-card">
       <div className="text-center">
-        <img src="/BadgePhoto.jpg" className="rounded-circle" id="profpic" alt="Henok Assalif" />
+        <img src="/GradPhoto.jpeg" className="rounded-circle" id="profpic" alt="Henok Assalif" />
       </div>
       <h2 className="text-center">
         <span>Henok Assalif</span>
