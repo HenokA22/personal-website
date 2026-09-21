@@ -8,7 +8,7 @@ function AboutSection() {
       <h2 id="about-section" className="content-header" style={{ marginTop: 100 }}>About Me</h2>
       <div className="list-group-item list-group-item-action flex-column">
         <p className="card-text">
-          Hello 👋,  I'm a current Bachelor's/Master's student at the <b><a href="https://www.cs.washington.edu/academics/graduate/bsms/">University of Washington</a></b> majoring in Computer Science and Engineering.
+          Hello 👋,  I'm a current Bachelor's/Master's student at the <b><a href="https://www.cs.washington.edu/academics/graduate/bsms/" className="uw-link">University of Washington</a></b> majoring in Computer Science and Engineering.
         </p>
 
         <p className="card-text">

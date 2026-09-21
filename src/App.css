@@ -437,6 +437,11 @@ a {
   border-radius: 5px;
 }
 
+.uw-link {
+  color: #4b2e83;
+}
+
+
 @media only screen and (min-width: 990px) {
   .content-container {
     top: 80px;
