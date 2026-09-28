@@ -13,8 +13,7 @@ function AboutSection() {
 
         <p className="card-text">
           I have a strong interest in API development, distributed systems (backend microservices, parallel computing), full stack development, operating systems, and anything to do with computing.
-          I'm particularly excited about working on FinTech services and Android applications which is cultivated from my most recent internship at Google and desire to work on products where the cost of failure is high.
-          As a methodical driven individual, I believe these are areas of interest that my skillset shines best!
+          I'm particularly excited about working on FinTech services and Android applications which is cultivated from my most recent internship at Google and desire to work on products where the cost of failure is high. As a methodical, driven individual, these are the areas where my skillset shines best!
         </p>
 
         <p className="card-text">

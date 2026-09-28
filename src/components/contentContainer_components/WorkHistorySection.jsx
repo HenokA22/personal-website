@@ -16,10 +16,10 @@ function WorkHistorySection() {
           During my time as a Hardware/Software Interface Teaching Assistant in the Paul G. Allen School, I worked closely with over <b>100</b> students across different formats of learning. Each week, I taught a recitation of lecture to <b>27+</b> students to reinforce core principles of <b>computer organization, C programming, and Assembly</b>.
         </p>
 
-        <p className="card-text"> As an Allen Scholars Teaching Assistant, I helped to facilitate group discussions of 25+ students on data structures and object-oriented programming. These sessions created space for collaboration and critical reflection, helping students connect theory to practice.</p>
+        <p className="card-text"> As an Allen Scholars Teaching Assistant, I helped to facilitate group discussions of 25+ students on data structures and object oriented programming. These sessions created space for collaboration and critical reflection, helping students connect theory to practice.</p>
 
         <p className="card-text">
-          Beyond the classroom, I held office hours where nearly 100 students sought support throughout the year. In one-on-one tutoring sessions, I guided students through the debugging process and resolved code issues in both C and Java—support that often translated into visible improvements in their confidence and performance. I also oversaw grading for students in my courses, providing detailed weekly feedback to ensure fairness and consistency. My collaboration with the professor and teaching staff streamlined communication and directly shaped course improvements, making the classroom a stronger learning environment.
+          Beyond the classroom, I held office hours where nearly 100 students sought support throughout the year. I guided students through the debugging process and resolved logical and syntax code issues in both C and Java and well as breaking down course concepts. This often translated into visible improvements in their confidence and performance. In addition, I routinely answered student questions on a class discussion board and oversaw grading for students in my courses, providing detailed weekly feedback to ensure fairness and consistency. Frequently I collaborated with the course professor and teaching staff to address student concerns and directly shape course improvements. Fostering a more engaging, rigorous, and accessible learning environment.
         </p>
       </div>
 
@@ -34,7 +34,7 @@ function WorkHistorySection() {
         </p>
 
         <p className="card-text">
-          To ensure safe migrations, I leveraged an experimental (A/B) flagging framework to execute controlled, staged rollouts of migrations, while using internal monitoring tools to manage crash clusters and performance metrics in order to ensure zero regressions before <b>100% </b> production release. I also wrote UI integration and unit tests to ensure all success and failure outcomes of UI flows async computations are properly tested. As AsyncTask was notoriously hard to test, I was able to increase the code coverage of async code to over <b>90%</b> and certain directories by up to <b>57%.</b>
+          To ensure safe migrations, I leveraged an experimental (A/B) flagging framework to execute controlled, staged rollouts of migrations, while using internal monitoring tools to manage crash clusters and performance metrics in order to ensure zero regressions before <b>100% </b> production release. I also wrote UI integration and unit tests to ensure all success and failure outcomes of UI flows async computations are properly tested. As AsyncTask is known to be notoriously hard to test, I was able to increase the code coverage of async code to over <b>90%</b> and certain directories by up to <b>57%</b>.
         </p>
 
         <p className="card-text">
@@ -90,7 +90,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">January 2025 - June 2025</h6>
         <p className="card-text">
-          I collaborated with graduate student Chu Li to develop a geo-visualization question-and-answer application tailored for screen reader users. As part of this work, I designed and implemented a voice mode in React.js that integrated <b>ChatGPT</b> and the <b>Web Speech API</b>, enabling speech-to-text and microphone functionality while prioritizing accessibility.
+          I collaborated with graduate student Chu Li to develop a geo-visualization question and answer application tailored for screen reader users. As part of this work, I designed and implemented a voice mode in React.js that integrated <b>ChatGPT</b> and the <b>Web Speech API</b>, enabling speech-to-text and microphone functionality while prioritizing accessibility.
         </p>
 
 
@@ -110,7 +110,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Summer 2024</h6>
         <p className="card-text">
-          I led the development for a Microsoft Teams feature aimed at improving meeting concentration, discovering a 15% boost in focus. Additionally, I developed a C++ MFC-based Windows application to address incident reports during Teams calls, incorporating a recommendation algorithm that allowed clients to self-diagnose and resolve issues, potentially reducing company resource costs by 20%. I also wrote product specifications and design documents to outline our workflow and ensure alignment with industry standards.
+          I led the development for a Microsoft Teams feature aimed at improving meeting concentration, discovering a 15% boost in focus. Additionally, I developed a C++ MFC-based Windows application to address incident reports during Teams calls, incorporating a recommendation algorithm that allowed clients to self diagnose and resolve issues, potentially reducing company resource costs by 20%. I also wrote product specifications and design documents to outline our workflow and ensure alignment with industry standards.
         </p>
         <a href="https://www.linkedin.com/feed/update/urn:li:activity:7238260832453718017/">LinkedIn post</a>
       </div>
@@ -132,7 +132,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Fall 2023 & Fall 2024</h6>
         <p className="card-text">
-          I assisted over 25 eighth-grade students in a Python-focused curriculum, answering their questions and fostering their enthusiasm for programming. I also led makeup sessions, providing one-on-one instruction to students who missed regular classes. Through personalized guidance, I achieved a 100% success rate in helping them catch up and seamlessly rejoin the main curriculum.
+          I assisted over 25 eighth-grade students in a Python focused curriculum, answering their questions and fostering their enthusiasm for programming. I also led makeup sessions, providing one-on-one instruction to students who missed regular classes. Through personalized guidance, I achieved a 100% success rate in helping them catch up and seamlessly rejoin the main curriculum.
         </p>
       </div>
 
@@ -142,7 +142,7 @@ function WorkHistorySection() {
         </h5>
         <h6 className="card-subtitle mb-2 text-muted">Spring 2024</h6>
         <p className="card-text">
-          I instructed over 15 K-12 students in the fundamentals of Arduino computing, guiding them through hands-on projects using sensors, lightbulbs, and keypads within Arduino's IDE. I also revamped the course curriculum by brainstorming new ideas and implementing over 1,000 lines of code to create mini-exercises and a final project that helped students apply their knowledge in a practical, engaging way.
+          I instructed over 15 K-12 students in the fundamentals of Arduino computing, guiding them through hands on projects using sensors, lightbulbs, and keypads within Arduino's IDE. I also revamped the course curriculum by brainstorming new ideas and implementing over 1,000 lines of code to create mini-exercises and a final project that helped students apply their knowledge in a practical, engaging way.
         </p>
       </div>
     </>
